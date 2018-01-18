@@ -7,15 +7,16 @@ public class ArrayMethods1 {
 		double[] list2 = {1.42, 2.5, 5.6, 4.7, 1.3, 3.45};
 		String[] list3 = {"a", "E", "b", "z", "u", "d"};
 		
-		insertionSort(list1);
-		selectionSort(list2);
+		//insertionSort(list1);
+		//selectionSort(list2);
 		bubbleSort(list3);
+		System.out.println(java.util.Arrays.toString(list3));
 	}
 	
 	
 	public static void insertionSort(int[] list1)
 	{
-		d
+		
 	}
 	
 	
@@ -26,6 +27,18 @@ public class ArrayMethods1 {
 	
 	public static void bubbleSort(String[] list1)
 	{
+		String tempStr;
+		
+		for(int i=0;i<list1.length-1;i++)
+		{
+			if(list1[i].compareTo(list1[i+1])<0)
+			{
+				tempStr = list1[i];
+				list1[i] = list1[i+1];
+				list1[i+1] = tempStr;		 
+			}
+		}
+		
 		
 	}
 	

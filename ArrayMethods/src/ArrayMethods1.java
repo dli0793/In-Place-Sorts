@@ -28,19 +28,19 @@ public class ArrayMethods1 {
 	public static void bubbleSort(String[] list1)
 	{
 		String tempStr;
-		//for(int z=0;isOrdered(list1)==false;z++)
-		int counter = 4;
-		while(counter>0)
+		while(isOrdered(list1)==false)
+		//int counter = 4;
+		//while(counter>0)
 		{
 			for(int i=0;i<list1.length-1;i++)
 			{	
-				counter = 0;
+				//counter = 0;
 				if(list1[i].compareTo(list1[i+1])>0)
 				{
 					tempStr = list1[i];
 					list1[i] = list1[i+1];
 					list1[i+1] = tempStr;
-					counter++;
+					//counter++;
 				}
 			}
 		}

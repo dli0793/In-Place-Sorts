@@ -1,4 +1,8 @@
-
+/*
+ Author: Daniel Li
+ Date: 2/1/18
+ Title: In-Place Sorts
+ */
 public class ArrayMethods1 {
 
 	public static void main(String[] args) 
